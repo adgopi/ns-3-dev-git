@@ -234,6 +234,7 @@ TcpVegas::IncreaseWindow (Ptr<TcpSocketState> tcb, uint32_t segmentsAcked)
               NS_LOG_LOGIC ("We are in slow start and diff < m_gamma, so we "
                             "follow NewReno slow start");
               TcpNewReno::SlowStart (tcb, segmentsAcked);
+              flag_fast_start=1;
             }
           else
             {     // Linear increase/decrease mode
