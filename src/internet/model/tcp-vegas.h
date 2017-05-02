@@ -29,6 +29,9 @@
 
 #include "ns3/tcp-congestion-ops.h"
 
+
+#define flag_fast_start 0
+
 namespace ns3 {
 
 /**
