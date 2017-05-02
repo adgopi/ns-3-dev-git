@@ -23,6 +23,10 @@
 #include "ns3/timer.h"
 #include "ns3/tcp-socket-base.h"
 
+#define FScwnd 0
+#define FSssthresh 0
+#define congestionhappened 0
+
 namespace ns3 {
 
 /**
